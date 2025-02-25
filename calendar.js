@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const firstDay = new Date(year, month, 1);
         const lastDay = new Date(year, month + 1, 0);
         const daysInMonth = lastDay.getDate();
-        const startDay = firstDay.getDay(); // День недели первого числа (0 - вс, 1 - пн, ...)
+        const startDay = firstDay.getDay(); 
 
         const monthName = firstDay.toLocaleString("ru", { month: "long" });
         let html = `<h2>${monthName} ${year}</h2>`;

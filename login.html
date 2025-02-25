@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Календарь мероприятий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Вход в систему</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+        <p>Нет аккаунта? <a href="#" id="show-register">Зарегистрироваться</a></p>
+    </div>
+
+    <div class="auth-container hidden" id="register-container">
+        <h2>Регистрация</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Имя пользователя" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="#" id="show-login">Войти</a></p>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
